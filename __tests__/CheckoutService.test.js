@@ -4,7 +4,8 @@ import { Pedido } from '../src/domain/Pedido.js';
 import { CarrinhoBuilder } from './builders/CarrinhoBuilder.js';
 import { UserMother } from './builders/UserMother.js';
 
-// Dummy: o valor do cartão não importa para nenhum cenário; só precisa existir.
+// Dado de teste fixo (não é um Dummy): o SUT deve repassá-lo ao gateway,
+// e isso é conferido no cenário do cliente Premium.
 const CARTAO_DE_CREDITO = 'CARTAO-DE-TESTE';
 
 // Stub do PedidoRepository: devolve o pedido recebido já com um ID atribuído,
